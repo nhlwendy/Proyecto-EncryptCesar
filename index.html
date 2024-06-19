@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.icon-icons.com/icons2/2804/PNG/512/padlock_locked_security_icon_178872.png">
+  <title>Encriptador de Mensajes Secretos</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+  <body>
+    <video autoplay muted loop class="video-background">
+        <source src="assets/medium.mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="container">
+      <h1>¡Bienvenido(a) a EncryptCésar!</h1>
+      <p>Este encriptador de mensajes está diseñado para proteger tus mensajes secretos usando el Cifrado de César.</p>
+      <form>
+        <label for="input-message">Ingrese el mensaje secreto:</label>
+        <br><br>
+        <input type="text" id="input-message" name="input-message" required />
+        <br><br>
+        <label for="desplazamiento">Ingrese el número de desplazamiento:</label>
+        <br><br>
+        <input type="number" id="desplazamiento" name="desplazamiento" required />
+        <br><br>
+
+        <div class="button-container">
+          <button id="cifrar" type="submit">Cifrar</button>
+          <button id="descifrar" type="submit">Descifrar</button>
+        </div>
+
+        <br><br>
+        <label for="result-message">Mensaje Cifrado/Descifrado:</label>
+        <br><br>
+        <input type="text" id="result-message" name="result-message" readonly />
+      </form>
+    </div>
+
+  <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
